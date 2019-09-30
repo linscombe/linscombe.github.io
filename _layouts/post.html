@@ -6,8 +6,14 @@ layout: default
 		<img src="/images/pic01.jpg" alt="">
 	</a>
 	<header>
-		<h2>{{ page.title }}</h2>
-		<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+		<h2>{{ page.title }}</h2>		
+		<p>
+		  {{ page.date | date_to_string }}
+		  {% assign author = site.authors | where: 'short_name', page.author | first %}
+		  {% if author %}
+		    - <a href="{{ author.url }}">{{ author.name }}</a>
+		  {% endif %}
+		</p>
 	</header>
 	<section>
 {{ content }}
