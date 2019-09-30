@@ -1,9 +1,7 @@
-						<nav id="nav">
-							<ul>
-								<li{% if page.url == "/" %}class="current"{% endif %}><a href="index.html">Home</a></li>
-								<li><a href="charabia.html">Charabia</a></li>
-								<li><a href="bueno.html">Bueno?</a></li>
-								<li><a href="flapball.html">Flapball</a></li>
-								<li><a href="privacy.html">privacy</a></li>
-							</ul>
-						</nav>
+<nav id="nav">
+	<ul>
+{% for item in site.data.navigation %}
+<li><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a></li>
+{% endfor %}
+	</ul>
+</nav>
