@@ -35,7 +35,26 @@
 					<div class="container">
 
 						<!-- Content -->
-{{ content }}
+{% if page.url == "/" %}
+						{{ content }}
+{% else %}
+						<article class="box post">
+{% if page.featured-image %}
+							<a href="#" class="image featured">
+								<img src="/assets/images/featured/{{ page.featured-image }}" alt="">
+							</a>
+{% endif %}					
+							<header>
+								<h2>{{ page.title }}</h2>
+								<p>{{ page.subtitle }}</p>
+							</header>
+							<section>
+						{{ content }}
+							</section>
+						</article>						
+{% endif %}
+						
+						
 					</div>
 				</section>
 

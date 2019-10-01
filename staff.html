@@ -1,16 +1,8 @@
 ---
 layout: default
 title: Staff
+subtitle: All of the authors from our <a href="/blog.html">blog</a>
 ---
-<article class="box post">
-	<a href="#" class="image featured">
-		<img src="/images/pic01.jpg" alt="">
-	</a>
-	<header>
-		<h2>Staff</h2>
-		<p>All of the authors from our <a href="/blog.html">blog</a></p>
-	</header>
-	<section>
 		<ul>
 		  {% for author in site.authors %}
 		    <li>
@@ -20,5 +12,3 @@ title: Staff
 		    </li>
 		  {% endfor %}
 		</ul>
-	</section>
-</article>
