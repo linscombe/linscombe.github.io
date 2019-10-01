@@ -1,11 +1,14 @@
 ---
 layout: default
 title: Privacy Policy
+featured-image: privacy.png
 ---
 <article class="box post">
+{% if page.featured-image %}
 	<a href="#" class="image featured">
-		<img src="images/pic01.jpg" alt="">
+		<img src="/assets/images/featured/{{ page.featured-image }}" alt="">
 	</a>
+{% endif %}
 	<header>
 		<h2>Privacy Policy</h2>
 		<p></p>
