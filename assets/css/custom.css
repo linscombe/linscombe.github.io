@@ -1,3 +1,8 @@
-.spotlight span.image.appicon, .spotlight span.image img {
+.spotlight span.image.appicon, .spotlight span.image.appicon img {
 	border-radius: 22%;
+}
+span.image.profile img {
+	border-radius: 100%;
+	width: 80px;
+	heght: 80px;
 }
