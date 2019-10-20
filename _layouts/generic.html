@@ -1,0 +1,13 @@
+---
+layout: default
+featured-image: privacy.png
+---
+<!-- Content -->
+<section id="content" class="main">
+
+{% if page.featured-image %}
+	<span class="image main"><img src="/assets/images/featured/{{ page.featured-image }}" alt="" /></span>
+{% endif %}					
+
+{{ content }}
+</section>
