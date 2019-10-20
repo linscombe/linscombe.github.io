@@ -6,3 +6,11 @@ span.image.profile img {
 	width: 80px;
 	heght: 80px;
 }
+
+	body {
+		background-color: #333;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #666 15%, #333 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #666 15%, #333 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #666 15%, #333 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #666 15%, #333 85%);
+	}
