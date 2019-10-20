@@ -16,10 +16,11 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-
-{% include header.html %}
-
-{% include nav.html %}
+				
+{% if page.url == "/" %}
+	{% include header.html %}
+	{% include nav.html %}
+{% endif %}
 
 				<!-- Main -->
 					<div id="main">
